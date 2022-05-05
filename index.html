@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Preencha o Formulário</title>
+
+    <style>
+        html {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #DCDCDC;
+        }
+
+        body {
+            display: grid;
+            grid: auto;
+        }
+
+        footer {
+            background-color: #696969;
+            color: aliceblue;
+            margin-top: auto;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+
+        }
+    </style>
+
+    <h1>Bem vindos à página</h1>
+    <p>Nessa disciplina, estudamos IHC, desenvolvimento de páginas web, desenvolvimento para mobile e jogos.</p>
+    <p>Agora estamos em web.</p>
+    <hr style="border-style: ridge;">
+</head>
+
+<body>
+    <div class="form-box">
+        <form id="userRegistration" method="post" action="thankyou.html">
+            <fieldset>
+                <legend>Dados</legend>
+                <br>
+                <div id="user-information">
+                    <div class="name">
+                        <label for="cdc">Nome: </label>
+                        <input type="text" id="username" name="name" placeholder="Nome do usuario" required>
+                    </div>
+                    <br>
+                    <div id="mail">
+                        <label for="cdc">Email: </label>
+                        <input type="email" id="usermail" name="email" placeholder="Email do usuario" required>
+                    </div>
+                    <br>
+                    <div class="courses" id="usercourse">
+                        <label>Curso: </label>
+                        <input type="radio" id="cdc" name="courses" value="computerCience" required>
+                        <label for="cdc">Ciência da computação</label>
+                        <input type="radio" id="asd" name="courses" value="ADS" required>
+                        <label for="ads">ADS</label>
+                        <input type="radio" id="si" name="courses" value="SI" required>
+                        <label for="si">SI</label>
+                    </div>
+                </div>
+            </fieldset>
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
+        </form>
+    </div>
+    <footer>
+        Copyright bt Lucas Andrade Zilio 2022
+    </footer>
+</body>
+
+
+</html>
